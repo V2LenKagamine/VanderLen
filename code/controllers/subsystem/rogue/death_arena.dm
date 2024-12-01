@@ -174,6 +174,7 @@ SUBSYSTEM_DEF(death_arena)
 	desc = "It awaits an offering of your triumphs"
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "ravox_altar"
+	max_integrity = 1000000000
 
 /obj/structure/table/wood/fine/altar/after_added_effects(obj/item/item, mob/user)
 	if(!istype(item, /obj/item/bodypart/head))
