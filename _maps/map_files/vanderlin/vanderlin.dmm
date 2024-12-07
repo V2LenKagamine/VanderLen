@@ -17838,6 +17838,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/river)
+"uwj" = (
+/obj/structure/flora/newtree,
+/turf/closed/mineral/rogue,
+/area/rogue/under/town/caverogue)
 "uwI" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/transparent/openspace,
@@ -129141,7 +129145,7 @@ vgJ
 vgJ
 vgJ
 vgJ
-vgJ
+uwj
 vgJ
 vgJ
 vgJ
