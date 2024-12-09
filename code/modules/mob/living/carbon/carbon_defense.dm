@@ -248,8 +248,8 @@
 		to_chat(user, "<span class='warning'>[src] is missing that.</span>")
 		return FALSE
 
-	if(!user.cmode)
-		var/try_to_fail = !istype(user.rmb_intent, /datum/rmb_intent/weak)
+	if(!user.cmode && istype(user.rmb_intent,/datum/rmb_intent/weak))
+		var/try_to_fail = !isnull(user.mmb_intent)
 		var/list/possible_steps = list()
 		for(var/datum/surgery_step/surgery_step as anything in GLOB.surgery_steps)
 			if(!surgery_step.name)
@@ -267,13 +267,6 @@
 				done_step = possible_steps[possible_steps[1]]
 			if(done_step?.try_op(user, src, user.zone_selected, null, user.used_intent, try_to_fail))
 				return TRUE
-	/*
-	for(var/datum/surgery/S in surgeries)
-		if(!(mobility_flags & MOBILITY_STAND) || !S.lying_required)
-			if(user.used_intent.type == INTENT_HELP || user.used_intent.type == INTENT_DISARM)
-				if(S.next_step(user, user.used_intent))
-					return TRUE
-	*/
 	return FALSE
 
 
