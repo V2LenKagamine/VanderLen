@@ -1,6 +1,6 @@
 /datum/advclass/combat/rogue
 	name = "Rogue"
-	tutorial = "Where is the gold?"
+	tutorial = "A wandering thief, capable of breaking in and out of just about any secure location, and born to meet the sharp end of the guillotine. Just remember, murder is the mark of an amateur."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
@@ -14,7 +14,7 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/rogue
 	min_pq = 0
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/adventurer/CombatRogue.ogg'
+	cmode_music = 'sound/music/cmode/adventurer/CombatRogue.ogg'
 
 /datum/outfit/job/roguetown/adventurer/rogue/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -50,7 +50,6 @@
 	neck = /obj/item/clothing/neck/roguetown/coif
 	backpack_contents = list(/obj/item/lockpick = 1, /obj/item/rogueweapon/knife/dagger/steel)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)		//Rogues are known for commonly lacking standard morals, as well as seeing fucked-shit, so - this tracks.
 	ADD_TRAIT(H, TRAIT_THIEVESGUILD, TRAIT_GENERIC)
 	H.change_stat("strength", -1)
 	H.change_stat("perception", 2)
