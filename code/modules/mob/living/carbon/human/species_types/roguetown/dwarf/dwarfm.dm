@@ -27,10 +27,9 @@
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,YOUNGBEARD,STUBBLE,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
-	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	possible_ages = list(AGE_CHILD, AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	default_features = list("mcolor" = "FFF", "wings" = "None")
 	use_skintones = 1
-	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = NONE
 	liked_food = NONE
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT

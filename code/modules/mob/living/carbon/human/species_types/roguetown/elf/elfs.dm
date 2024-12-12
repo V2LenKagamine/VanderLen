@@ -29,10 +29,9 @@
 	inherent_traits = list(TRAIT_NOMOBSWAP)
 	default_features = list("mcolor" = "FFF", "ears" = "ElfW", "wings" = "None")
 	use_skintones = 1
-	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = NONE
 	liked_food = NONE
-	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	possible_ages = list(AGE_CHILD, AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/met.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/ft.dmi'
@@ -68,6 +67,8 @@
 	body_markings = list(
 		/datum/body_marking/tonage,
 	)
+
+	custom_clothes = TRUE
 
 /datum/species/elf/snow/check_roundstart_eligible()
 	return TRUE

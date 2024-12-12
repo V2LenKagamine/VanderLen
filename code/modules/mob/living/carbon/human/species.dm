@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/icon_override
 	var/icon_override_m
 	var/icon_override_f
-	var/list/possible_ages = ALL_AGES_LIST
+	var/list/possible_ages = ALL_AGES_LIST_WITH_CHILD
 	var/sexes = 1		// whether or not the race has sexual characteristics. at the moment this is only 0 for skeletons and shadows
 	var/patreon_req
 	var/max_age = 75
@@ -46,7 +46,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/exotic_blood = ""	// If my race wants to bleed something other than bog standard blood, change this to reagent id.
 	var/exotic_bloodtype = "" //If my race uses a non standard bloodtype (A+, O-, AB-, etc)
 	var/meat = /obj/item/reagent_containers/food/snacks/meat/slab/human //What the species drops on gibbing
-	var/skinned_type
 	var/liked_food = NONE
 	var/disliked_food = GROSS
 	var/toxic_food = TOXIC
